@@ -29,7 +29,7 @@ The device calculates AQI on-device and sends the data to a mobile application f
 ---
 
 ## Project Website
-https://gargibanarase.github.io/BreathClean
+https://gargibnarase.github.io/BreathClean
 
 ---
 
