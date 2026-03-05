@@ -1,312 +1,201 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BreathClean</title>
-
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <div class="background-blobs"></div>
 <div class="air-particles"></div>
 
-
 <!-- NAVBAR -->
-
 <nav class="navbar">
-
-<div class="brand">
-
-<img src="logo.png" class="logo">
-<span class="brand-name">BreathClean</span>
-
-</div>
-
-<ul class="nav-links">
-
-<li><a href="#problem">Problem</a></li>
-<li><a href="#solution">Solution</a></li>
-<li><a href="#architecture">Architecture</a></li>
-<li><a href="#app">App</a></li>
-<li><a href="#innovation">Innovation</a></li>
-
-</ul>
-
+  <div class="brand">
+    <img src="logo.png" class="logo" alt="BreathClean">
+    <span class="brand-name">BreathClean</span>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#app">App</a></li>
+    <li><a href="#innovation">Innovation</a></li>
+  </ul>
 </nav>
-
-
+<div class="nav-overlay" id="navOverlay"></div>
 
 <!-- HERO -->
-
 <section class="hero">
-
-<h1 class="main-title">
-
-<img src="logo.png" class="hero-logo">
-BreathClean
-
-</h1>
-
-<h2 class="hero-title">
-World’s Smallest AI AQI Monitor
-</h2>
-
-<p class="hero-sub">
-Making the Invisible — Visible
-</p>
-
+  <div class="hero-badge">Personal Air Intelligence</div>
+  <h1 class="main-title">Breath<span class="accent">Clean</span></h1>
+  <h2 class="hero-title">World's Smallest AI AQI Monitor</h2>
+  <p class="hero-sub">Making the Invisible — <span class="accent">Visible</span></p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Sensors</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">Real‑time</span><span class="stat-label">Edge AI</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">0%</span><span class="stat-label">Cloud Needed</span></div>
+  </div>
+  <a href="#problem" class="cta-btn">Explore the Device ↓</a>
 </section>
-
-
 
 <!-- PROBLEM -->
-
 <section id="problem" class="section">
-
-<h2>🚨 The Problem</h2>
-
-<ul class="problem-list">
-
-<li>City AQI apps show average data — not the air YOU breathe</li>
-<li>Toxic gases are invisible but silently harmful</li>
-<li>No personal exposure tracking</li>
-<li>Devices show numbers — not meaning</li>
-
-</ul>
-
+  <div class="section-label">01 / Problem</div>
+  <h2>🚨 You're Breathing Blind</h2>
+  <div class="problem-grid">
+    <div class="problem-card"><div class="problem-icon">📍</div><p>City AQI apps show <strong>average data</strong> — not the air YOU breathe</p></div>
+    <div class="problem-card"><div class="problem-icon">👻</div><p>Toxic gases are <strong>invisible</strong> but silently harmful</p></div>
+    <div class="problem-card"><div class="problem-icon">📊</div><p>No <strong>personal exposure</strong> tracking across your day</p></div>
+    <div class="problem-card"><div class="problem-icon">❓</div><p>Devices show numbers — <strong>not meaning</strong> or health impact</p></div>
+  </div>
 </section>
-
-
 
 <!-- SOLUTION -->
-
 <section id="solution" class="section">
-
-<h2>💡 Our Solution</h2>
-
-<p>
-BreathClean is a portable AI-powered air intelligence device.
-</p>
-
-<div class="solution-grid">
-
-<div>✔ Detects PM2.5 PM10 VOC O₃</div>
-<div>✔ Calculates US EPA AQI on-device</div>
-<div>✔ Tracks personal pollution exposure</div>
-<div>✔ Generates Health Score</div>
-<div>✔ Syncs via Bluetooth</div>
-<div>✔ Works without cloud dependency</div>
-
-</div>
-
-<div class="flow">
-Air → Multi-Sensor Detection → Edge Processing → BLE Sync → Mobile App
-</div>
-
+  <div class="section-label">02 / Solution</div>
+  <h2>💡 Your Personal Air Intelligence</h2>
+  <p class="section-intro">BreathClean is a portable AI-powered air intelligence device that goes where you go.</p>
+  <div class="solution-grid">
+    <div class="sol-card"><span class="sol-check">✔</span><span>Detects PM2.5, PM10, VOC, O₃</span></div>
+    <div class="sol-card"><span class="sol-check">✔</span><span>Calculates US EPA AQI on-device</span></div>
+    <div class="sol-card"><span class="sol-check">✔</span><span>Tracks personal pollution exposure</span></div>
+    <div class="sol-card"><span class="sol-check">✔</span><span>Generates AI Health Score</span></div>
+    <div class="sol-card"><span class="sol-check">✔</span><span>Syncs via Bluetooth</span></div>
+    <div class="sol-card"><span class="sol-check">✔</span><span>Works without cloud dependency</span></div>
+  </div>
+  <div class="flow-bar">
+    <div class="flow-step">Air</div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">Multi-Sensor</div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">Edge AI</div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">BLE Sync</div>
+    <span class="flow-arrow">→</span>
+    <div class="flow-step">Mobile App</div>
+  </div>
 </section>
-
-
 
 <!-- ARCHITECTURE -->
-
 <section id="architecture" class="section">
-
-<h2>⚙ Smart Sensor Architecture</h2>
-
-<div class="architecture-diagram">
-
-<div class="sensor">PMSA003</div>
-<div class="sensor">HS4001</div>
-<div class="sensor">ZMOD4410</div>
-<div class="sensor">ZMOD4510</div>
-
-<div class="arrow">↓</div>
-
-<div class="brain">XIAO ESP32</div>
-
-<div class="arrow">↓</div>
-
-<div class="app">Mobile App</div>
-
-</div>
-
+  <div class="section-label">03 / Architecture</div>
+  <h2>⚙ Smart Sensor Stack</h2>
+  <div class="arch-wrap">
+    <div class="arch-sensors">
+      <div class="arch-chip sensor-chip"><span class="chip-label">Particulate Matter</span><strong>PMSA003</strong><span class="chip-sub">PM2.5 / PM10</span></div>
+      <div class="arch-chip sensor-chip"><span class="chip-label">Humidity & Temp</span><strong>HS4001</strong><span class="chip-sub">±1.5% RH</span></div>
+      <div class="arch-chip sensor-chip"><span class="chip-label">VOC Detection</span><strong>ZMOD4410</strong><span class="chip-sub">Indoor Air</span></div>
+      <div class="arch-chip sensor-chip"><span class="chip-label">Ozone</span><strong>ZMOD4510</strong><span class="chip-sub">Outdoor O₃</span></div>
+    </div>
+    <div class="arch-connector"><div class="conn-line"></div><span class="conn-label">I²C / UART Bus</span></div>
+    <div class="arch-chip brain-chip"><span class="chip-label">Processing Brain</span><strong>XIAO ESP32-S3</strong><span class="chip-sub">Edge AI + BLE 5.0</span></div>
+    <div class="arch-connector"><div class="conn-line"></div><span class="conn-label">Bluetooth LE</span></div>
+    <div class="arch-chip app-chip"><span class="chip-label">User Interface</span><strong>Mobile App</strong><span class="chip-sub">iOS & Android</span></div>
+  </div>
 </section>
-
-
 
 <!-- HARDWARE -->
-
 <section class="section">
-
-<h2>Hardware Development</h2>
-
-<p>Prototype PCB used during early BreathClean development.</p>
-
-<img src="pcb.png" class="pcb-image">
-
+  <div class="section-label">04 / Hardware</div>
+  <h2>🔧 Prototype PCB</h2>
+  <p class="section-intro">Custom PCB developed during BreathClean's early hardware phase.</p>
+  <img src="pcb.png" class="pcb-image" alt="BreathClean PCB">
 </section>
-
-
 
 <!-- APP -->
-
 <section id="app" class="section">
-
-<h2>📱 Intelligent Mobile App</h2>
-
-<div class="app-grid">
-
-<img src="homepage.png">
-
-<div>
-
-<ul>
-
-<li>Live AQI Dashboard</li>
-<li>Health Score</li>
-<li>Exposure History</li>
-<li>AI Alerts</li>
-<li>Smart Recommendations</li>
-
-</ul>
-
-<p>
-Not just data — actionable insight.
-</p>
-
-</div>
-
-</div>
-
+  <div class="section-label">05 / Mobile App</div>
+  <h2>📱 Intelligent Dashboard</h2>
+  <div class="app-grid">
+    <div class="app-img-wrap"><img src="homepage.png" alt="BreathClean App"></div>
+    <div class="app-features">
+      <div class="app-feature"><span class="feat-dot"></span>Live AQI Dashboard</div>
+      <div class="app-feature"><span class="feat-dot"></span>Personal Health Score</div>
+      <div class="app-feature"><span class="feat-dot"></span>Exposure History & Trends</div>
+      <div class="app-feature"><span class="feat-dot"></span>AI-Powered Alerts</div>
+      <div class="app-feature"><span class="feat-dot"></span>Smart Recommendations</div>
+      <p class="app-tagline">Not just data — <strong>actionable insight.</strong></p>
+    </div>
+  </div>
 </section>
-
-
 
 <!-- DEVICE -->
-
 <section class="section">
-
-<h2>Product Design</h2>
-
-<img src="model3d.png" class="model-img">
-
+  <div class="section-label">06 / Design</div>
+  <h2>✨ Product Design</h2>
+  <div class="model-wrap">
+    <img src="model3d.png" class="model-img" alt="BreathClean 3D Model">
+    <div class="model-glow"></div>
+  </div>
 </section>
-
-
 
 <!-- VIDEO -->
-
 <section class="section">
-
-<h2>Assembly Process</h2>
-
-<video controls>
-<source src="assembly.mp4">
-</video>
-
+  <div class="section-label">07 / Process</div>
+  <h2>🎬 Assembly Process</h2>
+  <div class="video-wrap"><video controls><source src="assembly.mp4"></video></div>
 </section>
-
-
 
 <!-- INNOVATION -->
-
 <section id="innovation" class="section">
-
-<h2>🚀 Innovation & Uniqueness</h2>
-
-<table>
-
-<tr>
-<th>Feature</th>
-<th>BreathClean</th>
-<th>Typical AQI App</th>
-</tr>
-
-<tr><td>Hyper Local Sensing</td><td>✅</td><td>❌</td></tr>
-<tr><td>Personal Health Score</td><td>✅</td><td>❌</td></tr>
-<tr><td>Ozone Detection</td><td>✅</td><td>❌</td></tr>
-<tr><td>Edge Processing</td><td>✅</td><td>❌</td></tr>
-<tr><td>Pollution Spike Alerts</td><td>✅</td><td>❌</td></tr>
-<tr><td>Actionable Advice</td><td>✅</td><td>❌</td></tr>
-
-</table>
-
+  <div class="section-label">08 / Innovation</div>
+  <h2>🚀 BreathClean vs. The Rest</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Feature</th><th>BreathClean</th><th>Typical AQI App</th></tr>
+      <tr><td>Hyper Local Sensing</td><td class="yes">✅</td><td class="no">❌</td></tr>
+      <tr><td>Personal Health Score</td><td class="yes">✅</td><td class="no">❌</td></tr>
+      <tr><td>Ozone Detection</td><td class="yes">✅</td><td class="no">❌</td></tr>
+      <tr><td>Edge Processing</td><td class="yes">✅</td><td class="no">❌</td></tr>
+      <tr><td>Pollution Spike Alerts</td><td class="yes">✅</td><td class="no">❌</td></tr>
+      <tr><td>Actionable Advice</td><td class="yes">✅</td><td class="no">❌</td></tr>
+    </table>
+  </div>
 </section>
 
-
-
-<!-- WHY BREATHCLEAN MATTERS -->
-
+<!-- WHY -->
 <section class="section">
-
-<h2>🌍 Why BreathClean Matters</h2>
-
-<p>
-Air pollution is one of the largest silent health threats.
-</p>
-
-<p>
-Traditional AQI apps show city averages.
-But pollution exposure is <b>hyper-local and constantly changing.</b>
-</p>
-
-<p>
-BreathClean gives individuals <b>real-time personal air intelligence.</b>
-</p>
-
-<div class="why-grid">
-
-<div class="why-card">Avoid pollution spikes</div>
-<div class="why-card">Reduce long-term exposure</div>
-<div class="why-card">Make healthier decisions</div>
-<div class="why-card">Understand invisible environmental risks</div>
-
-</div>
-
+  <div class="section-label">09 / Impact</div>
+  <h2>🌍 Why BreathClean Matters</h2>
+  <p class="section-intro">Pollution is <strong>hyper-local and constantly changing</strong> — city averages miss what you actually breathe.</p>
+  <div class="why-grid">
+    <div class="why-card"><span class="why-icon">🛡️</span><p>Avoid pollution spikes</p></div>
+    <div class="why-card"><span class="why-icon">📉</span><p>Reduce long-term exposure</p></div>
+    <div class="why-card"><span class="why-icon">🧠</span><p>Make healthier decisions</p></div>
+    <div class="why-card"><span class="why-icon">🔬</span><p>Understand invisible risks</p></div>
+  </div>
 </section>
 
-
-
-<!-- FUTURE VISION -->
-
+<!-- FUTURE -->
 <section class="section">
-
-<h2>🚀 Future Vision</h2>
-
-<p>
-BreathClean aims to evolve into a personal air intelligence platform.
-</p>
-
-<div class="vision-grid">
-
-<div class="vision-card">Crowd-sourced pollution maps</div>
-<div class="vision-card">Predictive health alerts</div>
-<div class="vision-card">Smart city pollution networks</div>
-<div class="vision-card">Environmental health analytics</div>
-
-</div>
-
+  <div class="section-label">10 / Vision</div>
+  <h2>🔭 Future Vision</h2>
+  <p class="section-intro">BreathClean aims to evolve into a full personal air intelligence platform.</p>
+  <div class="vision-grid">
+    <div class="vision-card"><span>🗺️</span><p>Crowd-sourced pollution maps</p></div>
+    <div class="vision-card"><span>⚡</span><p>Predictive health alerts</p></div>
+    <div class="vision-card"><span>🏙️</span><p>Smart city pollution networks</p></div>
+    <div class="vision-card"><span>📈</span><p>Environmental health analytics</p></div>
+  </div>
 </section>
-
-
 
 <footer>
-
-“You cannot fight what you cannot see.  
-BreathClean makes the invisible — visible.”
-
+  <div class="footer-brand">
+    <img src="logo.png" class="footer-logo" alt="BreathClean">
+    <span>BreathClean</span>
+  </div>
+  <p class="footer-quote">"You cannot fight what you cannot see.<br>BreathClean makes the invisible — <span class="accent">visible</span>."</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
